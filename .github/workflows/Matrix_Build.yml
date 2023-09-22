@@ -1,11 +1,11 @@
 name: Multiple Python Versions
 
 on:
-  workflow_run:
-    workflows: ["Lint"]
-    branches: ["main"]
-    types: 
-      - completed
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
