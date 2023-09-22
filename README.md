@@ -4,6 +4,7 @@
 [![Test](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/test.yml)
 [![Black Formatter](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/black.yml/badge.svg)](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/black.yml)
 [![Lint](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/ruff.yml/badge.svg)](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/ruff.yml)
+[![Multiple Python Versions](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/Matrix_Build.yml/badge.svg)](https://github.com/nogibjj/IDS-Week4_MiniProject_us26/actions/workflows/Matrix_Build.yml)
 
 # Overview   
 
