@@ -1,7 +1,6 @@
 import polars as pl
 import plotly.express as px
 import os
-import pandas as pd 
 
 url = "https://github.com/nogibjj/IDS-Week4_MiniProject_us26/blob/main/Data/Ranking.csv?raw=true"
 
