@@ -1,4 +1,4 @@
-# Continuous Integration using GitHub Actions of Python
+# GitHub Actions Matrix Build that tests more than one than one version of Python
 
 [![Install](https://github.com/nogibjj/IDS706-Individual_Project_1_us26/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IDS706-Individual_Project_1_us26/actions/workflows/install.yml)
 [![Test](https://github.com/nogibjj/IDS706-Individual_Project_1_us26/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/IDS706-Individual_Project_1_us26/actions/workflows/test.yml)
@@ -6,10 +6,7 @@
 [![Ruff](https://github.com/nogibjj/IDS706-Individual_Project_1_us26/actions/workflows/ruff.yml/badge.svg)](https://github.com/nogibjj/IDS706-Individual_Project_1_us26/actions/workflows/ruff.yml)
 
 
-# Overview
-
-##### Here is the link to access the video explaining the project and demonstrating its functionality :
-   
+# Overview   
 
 ## Code Description
 
