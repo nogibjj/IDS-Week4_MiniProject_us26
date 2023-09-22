@@ -17,4 +17,10 @@ lint:
 		ruff check Codes/python_script/*.py &&\
 			ruff check Codes/src/*.py
 
+container-lint:
+	docker run --rm -i hadolint/hadolint < Dockerfile
+
+deploy:
+	#deploy goes here
+
 all: install test format lint

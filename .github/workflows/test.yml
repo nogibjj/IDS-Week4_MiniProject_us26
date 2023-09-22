@@ -9,7 +9,26 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python-version: 3.8
+            name: ubuntu_latest_Python_3_8
+            continue-on-error: true
+          - os: ubuntu-latest
+            python-version: 3.9
+            name: ubuntu_latest_Python_3_9
+            continue-on-error: true
+          - os: ubuntu-20.04
+            python-version: 3.8
+            name: ubuntu_20_04_Python_3_8
+            continue-on-error: true
+          - os: ubuntu-20.04
+            python-version: 3.9
+            name: ubuntu_20_04_Python_3_9
+            continue-on-error: true
+    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
     - name: Install build dependencies
@@ -37,3 +56,15 @@ jobs:
         git add .
         git commit -m "Add results"
         git push
+
+    - name: deploy
+      run: make deploy
+
+    - name: Build status badge
+      uses: RubbaBoy/BYOB@v1.3.0
+      with:
+        NAME: ${{ matrix.name }}
+        LABEL: ${{ matrix.name }}
+        STATUS: ${{ job.status }}
+        COLOR: ${{ job.status == 'success' && 'green' || job.status == 'failure' && 'red' || 'yellow' }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
