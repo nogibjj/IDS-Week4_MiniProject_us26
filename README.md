@@ -10,7 +10,7 @@
 # Overview   
 
 <p align="center">
-  <img width="700" src="https://github.com/nogibjj/IDS-Week4_MiniProject_us26/blob/main/Image/py_ver.png" alt="pyver">
+  <img width="900" src="https://github.com/nogibjj/IDS-Week4_MiniProject_us26/blob/main/Image/py_ver.png" alt="pyver">
 </p>
 
 
