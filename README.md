@@ -9,6 +9,12 @@
 
 # Overview   
 
+### Using a single-dimension matrix
+
+##### Specifying a single variable to create a single-dimension matrix.
+
+For example, the following workflow defines the variable version of python with the values [3.7,3.8,3.9]. The workflow will run three jobs, one for each value in the variable. Each job will access the version value through the matrix.version context and pass the value as node-version to the actions/setup-node action.
+
 <p align="center">
   <img width="900" src="https://github.com/nogibjj/IDS-Week4_MiniProject_us26/blob/main/Image/py_ver.png" alt="pyver">
 </p>
